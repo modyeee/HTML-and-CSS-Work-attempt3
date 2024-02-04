@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainy Days | Checked out products</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <meta name="description" content="Required information from you to proceed with the payment">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="container">
+               <div class="navbar">
+                   <div class="logo">
+                       <a href="index.html"><img src="images/image_1.png" alt="Rainy Days Company Logo"></a>
+                   </div>
+                   <nav>
+                    <ul id="MenuItems">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="products.html">Products</a></li>
+                     <li><a href="about.html">About</a></li>
+                     <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                   </nav>
+                   <a href="cart.html"><img class="cart-img" src="images/cart.png" alt="Shopping cart"></a>
+                   <img src="images/menu.png" onclick="menutoggle()" class="menu-icon" alt="Menu icon">
+               </div>
+               <hr>
+             </div>
+            </div>
+    </header>
+       <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <h1>Contact information</h1>
+                <form action="submit.html">
+                  <label for="email"></label>
+                  <input type="text" id="email" required placeholder="Email">
+                  <h2>Shipping adress</h2>
+                  <label for="fname"></label>
+                  <input style="width:auto;" type="text" id="fname" required placeholder="First name">
+                  <label for="lname"></label>
+                  <input style="width:auto" type="text" id="lanme" placeholder="Last name">
+                  <label for="adress"></label>
+                  <input type="text" id="adress" placeholder="Adress">
+                  <label for="city"></label>
+                  <input type="text" id="city" placeholder="City">
+                  <label for="country"></label>
+                  <input type="text" id="country" placeholder="Country">
+                  <label for="pcode"></label>
+                  <input type="text" id="pcode" placeholder="Postal code">
+                  <label for="phone"></label>
+                  <input type="text" id="number" placeholder="Phone number">
+                  <input class="s-btn" type="submit" value="Submit">
+                </form>
+            </div>
+       </div>
+       </div>
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                   <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="Company Logo">
+                        <img src="images/app-store.png" alt="Company Logo">
+                    </div>
+                </div>
+                <div class="footer-col2">
+                   <img src="images/image_1.png" alt="Rainy Days Company Logo">
+                </div>
+                <div class="footer-col3">
+                   <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-------------js for toggle menu-------------->
+
+<script>
+    
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                MenuItems.style.maxHeight = "0px"
+            } 
+    }
+    
+    
+</script>
+
+</body>
+</html>
